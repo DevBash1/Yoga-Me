@@ -21,6 +21,12 @@ increase concentration, and improve your posture.
 
 https://devbash1.github.io/Yoga-Me   
 
+### How To Use
+
+`
+wget -O - https://raw.githubusercontent.com/DevBash1/Yoga-Me/main/setup.sh | bash
+`   
+
 ### Directory
    
 / ----|   
