@@ -1,4 +1,4 @@
-let db = require("/Assets/js/modules/db.js");
+let db = require("Assets/js/modules/db.js");
 let lessons = require("level");
 
 let lengthOfMonths = {
