@@ -11,11 +11,11 @@
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#fff",
-    "description": "Let's Talk!",
+    "description": "Let's Get Fit!",
     "categories": [
-        "social",
-        "chats",
-        "friends"
+        "health",
+        "fitness",
+        "yoga"
     ],
     "theme_color": "#10AD81",
     "icons": [
