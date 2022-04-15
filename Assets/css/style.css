@@ -523,7 +523,7 @@ i:hover {
 #medal {
     font-size: 20px;
     font-family: 'baskerville';
-    background: url("Assets/Icons/medal.png");
+    background: url("../Icons/medal.png");
     height: 70px;
     width: 70px;
     background-size: contain;
