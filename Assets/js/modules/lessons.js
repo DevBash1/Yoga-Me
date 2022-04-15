@@ -9,7 +9,7 @@ let calendar = require("calendar");
 let songs = ["1.mp3", "2.mp3"];
 let downloaded = [];
 let index = 0;
-let path = "/Assets/songs/";
+let path = "Assets/songs/";
 
 function run() {
     download(path + songs[index])
