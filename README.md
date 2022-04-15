@@ -1,5 +1,7 @@
 # Yoga-Me
 
+![alt text](https://github.com/DevBash1/Yoga-Me/raw/main/Assets/Icons/app-nobg.png)   
+
 This is a PWA that helps you to get your body toned and lose weight quickly.   
 It also improves the mind and the body.   
 It guides you through Yoga Exercises that not only helps you get fit and flexible,   
