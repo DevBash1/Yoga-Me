@@ -1,7 +1,7 @@
 // Background Video Changer for Signup Page 
 
-let d = require("Assets/dist/download.js");
-let _ = require("Assets/dist/elect.js");
+let d = require("download");
+let _ = require("elect");
 
 let videos = ["web2x-challenging_03.mp4", "web2x-informative_01.mp4", "web2x-motivating_01.mp4", "web2x-nontraditional_01.mp4", "web2x-traditional_02.mp4"];
 let downloaded = [];
