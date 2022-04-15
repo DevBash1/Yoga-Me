@@ -1,0 +1,129 @@
+{
+    "1": {
+        "name": "Breathing",
+        "type": "Swastikasana",
+        "color": "skyblue",
+        "difficulty": "Easy",
+        "time": "4 mins",
+        "parts": [
+            "mind"
+        ],
+        "info": "Mind Relaxation and Breathing"
+    },
+    "2": {
+        "name": "Flexibility",
+        "type": "Seated Twist",
+        "color": "pink",
+        "difficulty": "Easy",
+        "time": "5 mins",
+        "parts": [
+            "back",
+            "hands",
+            "neck"
+        ],
+        "info": "Sitting Yoga for Flexibility"
+    },
+    "3": {
+        "name": "Streches",
+        "type": "Streching Exercise",
+        "color": "lime",
+        "difficulty": "Easy",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "neck"
+        ],
+        "info": "Hands and Neck Exercise"
+    },
+    "4": {
+        "name": "Asanas",
+        "type": "Asanas Yoga",
+        "color": "yellow",
+        "difficulty": "Medium",
+        "time": "5 mins",
+        "parts": [
+            "legs",
+            "hands"
+        ],
+        "info": "Asanas Yoga Exercise"
+    },
+    "5": {
+        "name": "Asanas 2",
+        "type": "Asanas Yoga",
+        "color": "grey",
+        "difficulty": "Medium",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs"
+        ],
+        "info": "Hands Yoga Exercise"
+    },
+    "6": {
+        "name": "Asanas 3",
+        "type": "Asanas Yoga",
+        "color": "aqua",
+        "difficulty": "Medium",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs",
+            "hips"
+        ],
+        "info": "Seated Forward Fold Yoga Exercise"
+    },
+    "7": {
+        "name": "Flexibility 2",
+        "type": "Flexibility Yoga",
+        "color": "chocolate",
+        "difficulty": "Medium",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs",
+            "neck",
+            "butt"
+        ],
+        "info": "Flexibility Improvement Yoga"
+    },
+    "8": {
+        "name": "Vrksasana",
+        "type": "Asana Yoga",
+        "color": "blueviolet",
+        "difficulty": "Hard",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs"
+        ],
+        "info": "Vrksasana Yoga Exercise"
+    },
+    "9": {
+        "name": "Yoga",
+        "type": "Yoga",
+        "color": "blue",
+        "difficulty": "Hard",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs",
+            "neck",
+            "butt"
+        ],
+        "info": "Yoga Exercise 1"
+    },
+    "10": {
+        "name": "Yoga 2",
+        "type": "Yoga",
+        "color": "aquamarine",
+        "difficulty": "Hard",
+        "time": "5 mins",
+        "parts": [
+            "hands",
+            "legs",
+            "neck",
+            "butt"
+        ],
+        "info": "Yoga Exercise 2"
+    }
+}

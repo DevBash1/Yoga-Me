@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#10ad7e">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Yoga Me</title>
+        <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+        <script src="/Assets/dist/elect.js"></script>
+<!--         <script src="/Assets/dist/nodify.js"></script> -->
+        <script src="/Assets/dist/import.js"></script>
+        <script src="/Assets/dist/anime.js"></script>
+        <script src="/Assets/dist/swiper.js"></script>
+        <script src="/Assets/dist/attention.js"></script>
+        <script src="/Assets/dist/download.js"></script>
+        <script src="/Assets/dist/moment.js"></script>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel="stylesheet" href="/Assets/css/style.css">
+        <link rel="stylesheet" href="/Assets/css/attention.css">
+        <link rel="stylesheet" href="/Assets/css/swiper.css">
+        <link rel="shortcut icon" href="/Assets/icons/icon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="/Assets/icons/icon.png">
+    </head>
+    <body>
+        <!-- Spinner -->
+        <div id="load_cov">
+            <div class="lds-roller" id="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="showLesson"></div>
+        <div id="word"></div>
+        <div class="page" id="page0">
+            <img id="logo" src="/Assets/icons/icon.png">
+            <h3 id="name">YOGA ME</h3>
+            <img id="yoga_girl" src="/Assets/images/yoga_girl.png">
+            <span id="start">Let's Start</span>
+        </div>
+        <div class="page" id="page1">
+            <video src="/Assets/videos/web2x-inspiring_02.mp4" loop="true" autoplay="true"></video>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <main class="swiper-slide">
+                        <img src="/Assets/images/yoga_girl.png" id="profile">
+                        <h1 id="username">Enter Name</h1>
+                        <br>
+                        <span id="signup" onclick="nextForm()">Continue</span>
+                    </main>
+                    <main class="swiper-slide">
+                        <div class="board">What is your gender?</div>
+                        <div class="image_holder">
+                            <div class="gender" onclick="selectGender(this)" data-gender="male">
+                                <img src="/Assets/images/male-nobg.png">
+                                <h3>Male</h3>
+                            </div>
+                            <div class="gender" onclick="selectGender(this)" data-gender="female">
+                                <img src="/Assets/images/female-nobg.png">
+                                <h3>Female</h3>
+                            </div>
+                        </div>
+                        <br>
+                        <span id="signup" onclick="nextForm()">Continue</span>
+                    </main>
+                    <main class="swiper-slide">
+                        <div class="board">What is your age?</div>
+                        <div class="image_holder">
+                            <div class="age">
+                                <h3>Age</h3>
+                                <h1 id="count">18</h1>
+                                <div id="counter_holder">
+                                    <img class="counter" src="/Assets/icons/minus.png" onclick="subtractFromAge()">
+                                    <img class="counter" src="/Assets/icons/plus.png" onclick="addToAge()">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <span id="signup" onclick="nextForm()">Continue</span>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div id="top">
+                <h3 id="my_name">YOGA ME</h3>
+                <img id="profile_picture">
+            </div>
+            <div id="body">
+                <!-- Tabs -->
+                <div id="homeTab" class="tabcontent" style="display: block;">
+                    <h3 id="greet">Yoga Me</h3>
+                    <div id="body_diagram">
+                        <img id="main_body" src="/Assets/images/body.png">
+                        <img id="body_legs" class="body_part" src="/Assets/images/body/legs.png">
+                        <img id="body_hands" class="body_part" src="/Assets/images/body/hands.png">
+                        <img id="body_back" class="body_part" src="/Assets/images/body/back.png">
+                        <img id="body_neck" class="body_part" src="/Assets/images/body/neck.png">
+                        <img id="body_abbs" class="body_part" src="/Assets/images/body/abbs.png">
+                        <img id="body_mind" class="body_part" src="/Assets/images/body/mind.png">
+                        <img id="body_thighs" class="body_part" src="/Assets/images/body/thighs.png">
+                        <img id="body_butt" class="body_part" src="/Assets/images/body/butt.png">
+                        <img id="body_shoulder" class="body_part" src="/Assets/images/body/shoulder.png">
+                        <img id="body_chest" class="body_part" src="/Assets/images/body/chest.png">
+                        <img id="body_muscle" class="body_part" src="/Assets/images/body/muscle.png">
+                        <img id="tweak" src="/Assets/images/body/butt.png">
+                    </div>
+                    <div id="lesson_info">
+                        <div class="flex">
+                            <div id="medal">
+                                <span>1</span>
+                            </div>
+                            <div id="lesson_stats">
+                                <p>
+                                    Difficulty <span>Easy</span>
+                                </p>
+                                <p>
+                                    Day <span>1</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="lesson_text">This exercise will improve your mind and relax your body.
+                        </div>
+                    </div>
+                </div>
+                <div id="menuTab" class="tabcontent">
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                    <div id="lesson">
+                        <video src="/Assets/videos/lessons/1.mp4" control="false"></video>
+                        <h1>Morning Yoga</h1>
+                        <span>5 Mins</span>
+                        <div>Meditation</div>
+                        <img src="/Assets/icons/icon.png">
+                    </div>
+                </div>
+                <div id="calendarTab" class="tabcontent">
+                    <p id="date"></p>
+                    <table>
+                        <tr>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>S</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="userTab" class="tabcontent">
+                    <div class="flex">
+                        <img id="user_profile" src="/Assets/images/yoga_girl.png">
+                        <div id="user_infos">
+                            <span id="user_name">User</span>
+                            <p>Level 1</p>
+                            <p>Day 1</p>
+                        </div>
+                    </div>
+                    <div id="quotes">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/3.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/4.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/5.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/6.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/7.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/8.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/9.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/Assets/images/quotes/10.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom" class="tab">
+                <i class="fi fi-sr-home tablinks active" onclick="openTab(event,'homeTab')"></i>
+                <i class="fi fi-sr-apps tablinks" onclick="openTab(event,'menuTab')"></i>
+                <i class="fi fi-sr-calendar tablinks" onclick="openTab(event,'calendarTab')"></i>
+                <i class="fi fi-sr-user tablinks" onclick="openTab(event,'userTab')"></i>
+            </div>
+        </div>
+        <div id="page2" class="page">
+            <video id="player" src="/Assets/videos/lessons/1.mp4" loop="true"></video>
+            <span id="time">0</span>
+        </div>
+        <script src="/Assets/js/script.js"></script>
+    </body>
+</html>

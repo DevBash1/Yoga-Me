@@ -1,0 +1,21 @@
+{
+    "name": "YOGA ME",
+    "version": "1.0.0",
+    "description": "My Yoga App",
+    "cache": true,
+    "where": "/",
+    "modules": {
+        "db": "Assets/js/modules/db.js",
+        "speak": "Assets/js/modules/speak.js",
+        "background": "Assets/js/modules/background.js",
+        "level": "Assets/js/modules/levels.json",
+        "levels": "Assets/js/modules/levels.js",
+        "elect": "Assets/dist/elect.js",
+        "calendar": "Assets/js/modules/calendar.js",
+        "lessons": "Assets/js/modules/lessons.js",
+        "store": "Assets/js/modules/store.js",
+        "lyrics": "Assets/js/modules/lyrics.json",
+        "download": "Assets/dist/download.js",
+        "voices": "Assets/js/modules/voices.js"
+    }
+}

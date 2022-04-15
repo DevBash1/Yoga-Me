@@ -1,0 +1,454 @@
+{
+    "1": {
+        "3": {
+            "type": "text",
+            "text": "I'm kate, your yoga instructor."
+        },
+        "2": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "7": {
+            "type": "text",
+            "text": "Hello {fname},\nWelcome to your first Yoga lesson."
+        },
+        "10": {
+            "type": "text",
+            "text": "Today we are going to be trying something easy and simple."
+        },
+        "15": {
+            "type": "text",
+            "text": "This is an exercise that will help you relax your mind."
+        },
+        "20": {
+            "type": "text",
+            "text": "Take the same postion as the woman in the video above."
+        },
+        "23": {
+            "type": "action",
+            "action": "play()"
+        },
+        "25": {
+            "type": "text",
+            "text": "Put both hands together and seat."
+        },
+        "35": {
+            "type": "action",
+            "action": "goto(1)"
+        },
+        "40": {
+            "type": "text",
+            "text": "Close your eyes and concentrate on my voice."
+        },
+        "46": {
+            "type": "action",
+            "action": "goto(1)"
+        },
+        "47": {
+            "type": "text",
+            "text": "Now breath in."
+        },
+        "50": {
+            "type": "text",
+            "text": "Hold your breath."
+        },
+        "55": {
+            "type": "text",
+            "text": "Now slowly breath out."
+        },
+        "60": {
+            "type": "text",
+            "text": "Continue breathing in and out."
+        },
+        "65": {
+            "type": "text",
+            "text": "Take it slow and easy."
+        },
+        "70": {
+            "type": "text",
+            "text": "Let's play you some relaxing songs."
+        },
+        "75": {
+            "type": "action",
+            "action": "playSong(0)"
+        },
+        "100": {
+            "type": "action",
+            "action": "volume(0.3)"
+        },
+        "101": {
+            "type": "text",
+            "text": "Relax your mind."
+        },
+        "105": {
+            "type": "text",
+            "text": "Imagine being alone in a garden with a river flowing beside you."
+        },
+        "110": {
+            "type": "text",
+            "text": "Inhale the aroma of the beautiful garden and feel the gentle breeze on your body."
+        },
+        "120": {
+            "type": "action",
+            "action": "volume(1)"
+        },
+        "200": {
+            "type": "action",
+            "action": "volume(0.1);speak.loadVoice();"
+        },
+        "205": {
+            "type": "text",
+            "text": "Congratulation {fname}, you have completed today's lesson."
+        },
+        "215": {
+            "type": "action",
+            "action": "endLesson()"
+        }
+    },
+    "2": {
+        "1": {
+            "type": "action",
+            "action": "playSong(1);speak.loadVoice();"
+        },
+        "2": {
+            "type": "action",
+            "action": "volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "Hello {fname},\nWelcome to your second Yoga lesson."
+        },
+        "10": {
+            "type": "text",
+            "text": "Today's lesson will be nothing like the first lesson. But it's also going to be easy."
+        },
+        "15": {
+            "type": "text",
+            "text": "Today we will be taking lessons to improve our flexibility. What is flexibility?"
+        },
+        "20": {
+            "type": "text",
+            "text": "Flexibility is the ability of a joint or series of joints to move through an unrestricted, pain free range of motion."
+        },
+        "40": {
+            "type": "text",
+            "text": "Now that we know that, let's get started with Today's Lesson."
+        },
+        "45": {
+            "type": "text",
+            "text": "Get into the same position as the woman shown above."
+        },
+        "50": {
+            "type": "text",
+            "text": "Watch closely and repeat her action slowly."
+        },
+        "55": {
+            "type": "action",
+            "action": "play()"
+        },
+        "60": {
+            "type": "action",
+            "action": "pause()"
+        },
+        "65": {
+            "type": "text",
+            "text": "Make sure to watch and follow her hands slowly."
+        },
+        "70": {
+            "type": "action",
+            "action": "play()"
+        },
+        "75": {
+            "type": "action",
+            "action": "play()"
+        },
+        "86": {
+            "type": "text",
+            "text": "Now keep repeating her actions and do not try to rush."
+        },
+        "90": {
+            "type": "text",
+            "text": "Take it very slow and easy."
+        },
+        "100": {
+            "type": "action",
+            "action": "volume(1)"
+        },
+        "105": {
+            "type": "action",
+            "action": "play()"
+        },
+        "175": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "180": {
+            "type": "text",
+            "text": "Keep going, just 2 minutes left to complete this lesson."
+        },
+        "185": {
+            "type": "text",
+            "text": "You can do it {fname}."
+        },
+        "235": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "240": {
+            "type": "text",
+            "text": "You are almost there {fname}."
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "3": {
+        "1": {
+            "type": "action",
+            "action": "playSong(0);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "4": {
+        "1": {
+            "type": "action",
+            "action": "playSong(1);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "5": {
+        "1": {
+            "type": "action",
+            "action": "playSong(0);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "6": {
+        "1": {
+            "type": "action",
+            "action": "playSong(1);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "7": {
+        "1": {
+            "type": "action",
+            "action": "playSong(0);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "8": {
+        "1": {
+            "type": "action",
+            "action": "playSong(1);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "9": {
+        "1": {
+            "type": "action",
+            "action": "playSong(0);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    },
+    "10": {
+        "1": {
+            "type": "action",
+            "action": "playSong(1);speak.loadVoice();volume(0.1)"
+        },
+        "5": {
+            "type": "text",
+            "text": "{fname}, watch the woman above and repeat after her slowly."
+        },
+        "15": {
+            "type": "text",
+            "text": "I won't be saying much {fname}, it's upto you now."
+        },
+        "20": {
+            "type": "action",
+            "action": "play();volume(1);"
+        },
+        "285": {
+            "type": "action",
+            "action": "speak.loadVoice();"
+        },
+        "290": {
+            "type": "text",
+            "text": "Congratulations, you did it {fname}."
+        },
+        "300": {
+            "type": "action",
+            "action": "endLesson();"
+        }
+    }
+}

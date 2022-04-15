@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Icon/Calm</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Calm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19.6004732,11.0009788 C22.3549896,10.5527561 24.4310542,8.89669253 24.2374931,7.30205733 C24.0439321,5.70742212 21.6540432,4.77807118 18.8995268,5.22629391 C16.1450104,5.67451663 14.0689458,7.3305802 14.2625069,8.9252154 C14.4560679,10.5198506 16.8459568,11.4492015 19.6004732,11.0009788 Z" id="Oval" stroke="#1E1E28" stroke-width="2"></path>
+        <path d="M17.9002636,19.7704351 C23.4196671,20.2423632 28.05061,18.8758032 28.2437641,16.7181379 C28.4369182,14.5604725 24.1191399,12.4287658 18.5997364,11.9568376 C13.0803329,11.4849095 8.44938997,12.8514695 8.25623588,15.0091349 C8.06308178,17.1668002 12.3808601,19.2985069 17.9002636,19.7704351 Z" id="Oval-Copy-2" stroke="#1E1E28" stroke-width="2" transform="translate(18.250000, 15.863636) rotate(-2.000000) translate(-18.250000, -15.863636) "></path>
+        <ellipse id="Oval-Copy" stroke="#1E1E28" stroke-width="2" cx="18" cy="26" rx="13" ry="5"></ellipse>
+    </g>
+</svg>
