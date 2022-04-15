@@ -20,19 +20,19 @@
     "theme_color": "#10AD81",
     "icons": [
         {
-            "src": "Assets/icons/icon.png",
+            "src": "Assets/Icons/icon.png",
             "sizes": "55x56",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "Assets/icons/app.png",
+            "src": "Assets/Icons/app.png",
             "sizes": "200x200",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "Assets/icons/icon.ico",
+            "src": "Assets/Icons/icon.ico",
             "sizes": "128x128",
             "type": "image/ico",
             "purpose": "any"
