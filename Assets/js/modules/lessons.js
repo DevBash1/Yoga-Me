@@ -42,8 +42,8 @@ function setLessons() {
     let unlocked = db.query("SELECT id,level FROM levels ORDER BY id DESC").level;
     let badvideos = [3, 5, 10];
     for (lesson of lessons) {
-        let icon = unlocked.includes(i) ? "/Assets/icons/icon.png" : "/Assets/icons/lock.png";
-        let video = badvideos.includes(i) ? "/Assets/videos/lessons/1.mp4" : `/Assets/videos/lessons/${i}.mp4`;
+        let icon = unlocked.includes(i) ? "Assets/icons/icon.png" : "Assets/icons/lock.png";
+        let video = badvideos.includes(i) ? "Assets/videos/lessons/1.mp4" : `Assets/videos/lessons/${i}.mp4`;
         let play = unlocked.includes(i) ? `openLesson(${i})` : "lessonLocked()";
         let template = `<div id="lesson" style="background:${lesson["color"]}" onclick="${play}">
                             <video src="${video}" control="false"></video>
@@ -70,7 +70,7 @@ function openLesson(id) {
     time = 0;
     lesson = id;
 
-    _("#player").attr("src").set("/Assets/videos/lessons/" + id + ".mp4");
+    _("#player").attr("src").set("Assets/videos/lessons/" + id + ".mp4");
 
     _("#player").on("click", function() {})
 
