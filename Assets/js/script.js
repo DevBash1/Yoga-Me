@@ -104,10 +104,6 @@ window.onpopstate = function(e) {
 let date = ((new moment()).format("MMMM, D"));
 _("#date").html(date);
 
-// force play background video
-
-_("video").at(1).this().play();
-
 _("#start").on("click", function() {
     db.query("SELECT * FROM user")
     if (db.length == 0) {
