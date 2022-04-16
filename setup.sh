@@ -22,26 +22,26 @@ cd Yoga-Me
 
 if command -v php -v &> /dev/null
 then
-        echo '\nRunning Server with php'
+        echo 'Running Server with php'
         php -S localhost:7000 -t .
 elif command -v node -v &> /dev/null
 then
         if command -v serve -v &> /dev/null
         then
-                echo '\nRunning Server with serve'
+                echo 'Running Server with serve'
                 serve
         elif command -v npm -v &> /dev/null
         then
-                echo '\nInstalling serve'
+                echo 'Installing serve'
                 npm i -g serve
 
                 serve
         else
-                echo '\nfailed to run local server'
+                echo 'Failed to run local server'
                 exit
         fi
 else
-        echo '\nfailed to run local server'
+        echo 'Failed to run local server'
         exit
 fi
 
