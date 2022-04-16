@@ -19,7 +19,8 @@ function setLevel() {
         let d = new Date();
         let date = `${d.getDate()}-${d.getMonth()}-${d.getFullYear()}`;
 
-        db.query(`SELECT id,level FROM levels WHERE date = '${date}'`);
+        db.query(`SELECT id,level,completed FROM levels WHERE date = '${date}'`);
+        let doneToday = db.result.completed[0];
         if (db.length != 0) {
             // Level Already Created for Today
             // Retrieve Level
@@ -27,6 +28,9 @@ function setLevel() {
 
             db.query("SELECT * FROM levels WHERE completed = true");
             let stage = (db.length + 1);
+            if(doneToday){
+                stage = (stage-1);
+            }
 
             db.query("SELECT * FROM levels");
             let day = db.length;

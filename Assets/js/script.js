@@ -13,6 +13,21 @@ const voices = require("voices");
 // Load Video Lessons
 lessons.setLessons()
 
+// Predownload Lesson Songs
+lessons.run()
+
+// Set Up Level
+require("levels").setLevel()
+
+// Set Up Calendar
+require("calendar").run()
+
+// Load Voice
+require("speak").loadVoice()
+
+// Download Lyrics Voices
+voices.downloadLyrics()
+
 // Page History
 backs = [0];
 
@@ -317,15 +332,6 @@ function start() {
     // Greet User
     greet(user.name[0].split(" ")[0]);
 
-    // Set Up Level
-    require("levels").setLevel()
-
-    // Set Up Calendar
-    require("calendar").run()
-
-    // Load Voice
-    require("speak").loadVoice()
-
     setTimeout(function() {
         spinner.stop()
         gotoPage(2);
@@ -469,11 +475,13 @@ function getPWADisplayMode() {
 }
 
 //Service Worker
+let url = new URL(document.location.href)
+let path = url.pathname;
 
 if ('serviceWorker'in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('sw.js', {
-            scope: '/Yoga-Me/'
+            scope: path,
         }).then((reg)=>{
             // registration success
             console.log("Registration Success");

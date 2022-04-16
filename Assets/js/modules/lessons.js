@@ -7,7 +7,7 @@ let speak = require("speak");
 let calendar = require("calendar");
 
 let songs = ["1.mp3", "2.mp3"];
-let downloaded = [];
+let downloaded = ["Assets/songs/1.mp3", "Assets/songs/2.mp3"];
 let index = 0;
 let path = "Assets/songs/";
 
@@ -21,18 +21,15 @@ function download(url) {
     // onFinish is called when download has finished
     d.onFinish = function() {
         if (d.getFileLink()) {
-            downloaded.push(d.getFileLink());
+            downloaded[index] = d.getFileLink();
         }
-        if (index != 2) {
+        if (index != 1) {
             index++;
             run();
         }
     }
     d.start();
 }
-
-// Pre Download songs
-run();
 
 function setLessons() {
     // Setup Lessons
@@ -113,7 +110,6 @@ function endLesson() {
                 goBack();
             });
             db.query(`UPDATE levels SET completed = 'true' WHERE id = '${result.id[0]}'`);
-            console.log(db.result);
         } else {
             modal("Congrats", "You did it again {fname}, nice job!", function() {
                 goBack();
@@ -168,5 +164,6 @@ function volume(number) {
 module.exports = {
     setLessons,
     openLesson,
-    stopLesson
+    stopLesson,
+    run
 }

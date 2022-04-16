@@ -14,28 +14,14 @@ if ('speechSynthesis'in window) {
 
 function say(word) {
     word = parseText(word)
-    if ('speechSynthesis'in window) {// Speech Synthesis supported
-    } else {
-        type(word)
-        voice(word)
-        return false;
-    }
-    try {
-        if (false) {
-            speak.volume = 1;
-            // From 0 to 1
-            speak.rate = 0.6;
-            // From 0.1 to 10
-            speak.pitch = 1.1;
-            // From 0 to 2
-            speak.lang = 'en-US';
+    type(word)
+    voice(word)
+}
 
-            speak.text = word;
-            speech.speak(speak);
-        } else {
-            voice(word)
-        }
-    } catch (e) {
+function talk(word) {
+    word = parseText(word)
+    if ('speechSynthesis' in window) {
+        // Speech Synthesis supported
         speak.volume = 1;
         // From 0 to 1
         speak.rate = 0.6;
@@ -47,7 +33,6 @@ function say(word) {
         speak.text = word;
         speech.speak(speak);
     }
-    type(word)
 }
 
 let waiting = [];
@@ -65,6 +50,8 @@ function voice(word) {
             if (voices.getVoice(word)) {
                 player.src = voices.getVoice(word);
                 player.play();
+            }else{
+                talk(word);
             }
             player.onended = function() {
                 if (waiting.length != 0) {
@@ -141,9 +128,10 @@ function typing() {
         let typer = setInterval(function() {
             if (words.length != 0) {
                 if (words[0].length != length) {
+                    elem.style.display = "block";
                     elem.innerHTML += words[0].charAt(length);
                     length++;
-                    if (elem.innerText.length > 100) {
+                    if (elem.innerText.length > 120) {
                         elem.innerHTML = elem.innerHTML.substring(1);
                     }
                 } else {
@@ -216,6 +204,7 @@ module.exports = {
     say,
     canSpeak,
     speech,
+    talk,
     type,
     loadVoice,
     typeAll,

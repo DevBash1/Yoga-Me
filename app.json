@@ -6,6 +6,7 @@
     "where": "/",
     "modules": {
         "db": "Assets/js/modules/db.js",
+        "nodb": "Assets/dist/nodb.js",
         "speak": "Assets/js/modules/speak.js",
         "background": "Assets/js/modules/background.js",
         "level": "Assets/js/modules/levels.json",

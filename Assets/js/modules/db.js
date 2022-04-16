@@ -1,4 +1,4 @@
-let NoDB = require("Yoga-Me/Assets/dist/nodb.js");
+let NoDB = require("nodb");
 
 let db = new NoDB({
     database: "YogaDB",
