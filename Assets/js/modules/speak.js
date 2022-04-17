@@ -38,8 +38,6 @@ function talk(word) {
 let waiting = [];
 let player = new Audio();
 
-voices.downloadLyrics();
-
 function voice(word) {
     if (true) {
         if (!player.paused) {
@@ -59,6 +57,10 @@ function voice(word) {
                     waiting.splice(0, 1);
                     voice(next);
                 }
+            }
+            player.onerror = function(){
+                talk(word);
+                player.pause();
             }
         }
     }

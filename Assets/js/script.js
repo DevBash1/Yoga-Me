@@ -22,12 +22,6 @@ require("levels").setLevel()
 // Set Up Calendar
 require("calendar").run()
 
-// Load Voice
-require("speak").loadVoice()
-
-// Download Lyrics Voices
-voices.downloadLyrics()
-
 // Page History
 backs = [0];
 
@@ -331,6 +325,10 @@ function start() {
 
     // Greet User
     greet(user.name[0].split(" ")[0]);
+
+    try {
+        voices.downloadLyrics();
+    } catch (e) {}
 
     setTimeout(function() {
         spinner.stop()

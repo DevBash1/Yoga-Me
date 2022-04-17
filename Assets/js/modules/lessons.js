@@ -6,7 +6,7 @@ let db = require("db");
 let speak = require("speak");
 let calendar = require("calendar");
 
-let songs = ["1.mp3", "2.mp3","3.mp3"];
+let songs = ["1.mp3", "2.mp3", "3.mp3"];
 let downloaded = ["Assets/songs/1.mp3", "Assets/songs/2.mp3", "Assets/songs/3.mp3"];
 let index = 0;
 let path = "Assets/songs/";
